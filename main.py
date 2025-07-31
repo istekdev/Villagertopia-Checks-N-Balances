@@ -16,34 +16,12 @@ def menu():
   jud1 = random.randint(1, 10)
   jud2 = random.randint(1, 10)
   jud3 = random.randint(1, 10)
-  if con1 in [2, 4, 6, 8, 10]:
-    cona = "Yes"
-  elif con1 in [1, 3, 5, 7, 9]:
-    cona = "No"
-  elif con2 in [2, 4, 6, 8, 10]:
-    con2a = "Yes"
-  elif con2 in [1, 3, 5, 7, 9]:
-    con2a = "No"
-  elif con3 in [2, 4, 6, 8, 10]:
-    con3a = "Yes"
-  elif con3 in [1, 3, 5, 7, 9]:
-    con3a = "No"
-  elif jud1 in [2, 4, 6, 8, 10]:
-    jud1a = "Yes"
-  elif jud1 in [1, 3, 5, 7, 9]:
-    jud1a = "No"
-  elif jud2 in [2, 4, 6, 8, 10]:
-    jud2a = "Yes"
-  elif jud2 in [1, 3, 5, 7, 9]:
-    jud2a = "No"
-  elif jud3 in [2, 4, 6, 8, 10]:
-    jud3a = "Yes"
-  elif jud3 in [1, 3, 5, 7, 9]:
-    jud3a = "No"
-  else:
-    print("ERR")
-    time.sleep(1)
-    menu()
+  cona = "Yes" if con1 % 2 == 0 else "No"
+  con2a = "Yes" if con2 % 2 == 0 else "No"
+  con3a = "Yes" if con3 % 2 == 0 else "No"
+  jud1a = "Yes" if jud1 % 2 == 0 else "No"
+  jud2a = "Yes" if jud2 % 2 == 0 else "No"
+  jud3a = "Yes" if jud3 % 2 == 0 else "No"
   for countdown in range(5, 0, -1):
     print(countdown)
     time.sleep(1)
