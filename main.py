@@ -25,7 +25,7 @@ def menu():
   for countdown in range(5, 0, -1):
     print(countdown)
     time.sleep(1)
-  print("CONGRESS REPRESENATIVE #1 VOTED: " + con1a)
+  print("CONGRESS REPRESENATIVE #1 VOTED: " + cona)
   print("CONGRESS REPRESENATIVE #2 VOTED: " + con2a)
   print("CONGRESS SENATOR #1 VOTED: " + con3a)
   print("JUDICIARY CHIEF JUSTICE VOTED: " + jud1a)
